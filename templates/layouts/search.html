@@ -1,0 +1,13 @@
+<div id="search">		
+	<form id="searchbox" action="http://localhost/wordpress/" method="get" role="search">
+		<input type="text" value="" name="s" placeholder="search..." />
+		<button type="reset" value="Reset"></button>
+	</form>
+	
+	<script src="/mymedia/themes/yoo_downtown_wp/warp/js/search.js"></script>
+	<script>
+	jQuery(function($) {
+		$('#searchbox input[name=s]').search({'url': 'http://localhost/wordpress/wp-admin/admin-ajax.php?action=warp_search', 'param': 's', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
+	});
+	</script>
+</div>

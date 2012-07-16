@@ -1,0 +1,87 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/ie.css);
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+/* Sidebar Menu Box-Color */
+/* Level 1 */
+.mod-box-color1 .menu-sidebar li.level1,
+.mod-box-color1 .menu-sidebar li.level1 .level1:hover,
+.mod-box-color1 .menu-sidebar li.level1.active,
+.mod-box-color2 .menu-sidebar li.level1,
+.mod-box-color2 .menu-sidebar li.level1 .level1:hover,
+.mod-box-color2 .menu-sidebar li.level1.active { border: none!important; }
+
+.mod-box-color1 .menu-sidebar a.level1,
+.mod-box-color1 .menu-sidebar span.level1,
+.mod-box-color2 .menu-sidebar a.level1,
+.mod-box-color2 .menu-sidebar span.level1 {
+	border: none;
+	background: url(../images/menu_sidebar_level1_ie.png) 0 0 repeat-x;
+}
+
+.mod-box-color1 .menu-sidebar .level1 .level1:hover,
+.mod-box-color2 .menu-sidebar .level1 .level1:hover { background-position: 0 -80px; background-color: none; }
+
+.mod-box-color1 .menu-sidebar .active .level1,
+.mod-box-color1 .menu-sidebar .active .level1:hover,
+.mod-box-color2 .menu-sidebar .active .level1,
+.mod-box-color2 .menu-sidebar .active .level1:hover { background-position: 0 -160px; background-color: transparent; }
+
+/* Level 2 */
+.mod-box-color1 .menu-sidebar ul.level2,
+.mod-box-color2 .menu-sidebar ul.level2 { border: none; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+/* Line Icon */
+ul.line-icon > li {
+	border-top: 1px dashed #ccc;
+	background: url(../images/list_line_icon.png) 0 0 no-repeat;
+}
+
+#block-bottom ul.line-icon > li {
+	border-top-color: #666;
+	background: url(../images/list_line_icon.png) 0 0 no-repeat;
+}
+
+.mod-box-color1 ul.line-icon > li,
+.mod-box-color2 ul.line-icon > li {
+	border-top-color: #fff;
+	background: url(../images/list_line_icon.png) 0 0 no-repeat;
+}
+
+#page ul.line-icon > li:first-child {
+	border-top: none;
+	background: url(../images/list_line_icon.png) 0 0 no-repeat;
+}
+
+ul.line-icon li:hover,
+#block-bottom ul.line-icon li:hover { background: url(../images/list_line_icon.png) 0 -200px no-repeat; }
+
+/* Table */
+table.zebra tbody tr { background: #efefef; }
+table.zebra tfoot tr { background: #f1f1f1; }
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Search Box */
+#searchbox input { line-height: 30px; }
+

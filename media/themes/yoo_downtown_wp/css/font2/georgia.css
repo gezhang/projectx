@@ -1,0 +1,17 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	text-transform: none;
+}
+
+#system .item > header .title time { font-weight: normal; }
+
+.module .module-title span.subtitle { font-weight: normal; }
+

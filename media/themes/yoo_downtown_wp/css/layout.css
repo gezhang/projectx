@@ -1,0 +1,83 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+.module,
+#header,
+#content { margin: 10px; }
+
+#breadcrumbs { margin: 15px 10px 5px 10px; }
+
+#toolbar,
+#footer { margin: 0 10px; }
+
+#footer .module { margin: 0; }
+
+#headerbar { padding: 20px 0; }
+
+
+/* Blocks
+----------------------------------------------------------------------------------------------------*/
+
+/* Toolbar */
+#block-toolbar { padding: 5px 0; }
+
+/* Main */
+#block-main { padding: 10px 0; }
+
+/* Bottom */
+#block-bottom { padding: 20px 0; }
+
+/* Footer */
+#block-footer {
+	padding: 20px 0;
+	background: url(../images/footer.png) 0 0 repeat-x;
+}
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+/* Toolbar */
+#toolbar {
+	line-height: 24px;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Menu */
+#menubar {
+	padding: 10px;
+	background: url(../images/menubar.png) 0 0 repeat;
+}
+
+/* System */
+#content {
+	padding: 15px;
+	background: url(../images/content.png) 0 0 repeat;
+}
+
+/* Footer */
+#footer {
+	font-size: 12px;
+	text-align: left;
+}
+
+#totop-scroller {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	z-index: 1;
+	width: 29px;
+	height: 30px;
+	background: url(../images/totop_scroller.png) 0 0 no-repeat;
+	text-decoration: none;
+}
+
+#totop-scroller:hover { background-position: 0 -35px; }

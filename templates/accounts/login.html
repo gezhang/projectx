@@ -1,0 +1,70 @@
+{% extends "base_simple.html" %}
+
+{% block block-main-body %}
+<div class="grid-block">
+	<div class="grid-box width25 grid-h" style="width:320px">
+		<div class="module mod-box mod-box-header mod-box-header-color1 deepest" style="min-height: 174px; ">
+			<h3 class="module-title"><span class="icon icon-twitter"></span>User sign in</h3>
+			<div>
+			<form class="box" action="" method="post">
+				{% csrf_token %}
+			    {% if form.errors %}
+		   		<p>{{ form.non_field_errors }}</p>
+			    {% endif %}
+	            <p style="padding-bottom: 0px">
+	             {{ form.username.label_tag }}<br>{{ form.username }} {{form.username.errors}}
+	            </p>
+	            <p style="padding-bottom: 0px">
+				{{ form.password.label_tag }}<br>{{ form.password }} {{form.password.errors}}
+	            </p>
+	            <p class="forgetmenot">
+	                <input id="LoginUser_RememberMe" type="checkbox" name="LoginUser$RememberMe" />
+	                <label for="LoginUser_RememberMe" id="LoginUser_RememberMeLabel">Remember me</label>
+	            </p>
+	            <p class="submit">
+	                <input type="submit" value="Login" class="button" /><input type="hidden" name="next" value="" />
+	            </p>
+			</form>
+			</div>
+		{% block form_footer %}
+			<p id="nav">
+			    <a href="/accounts/signup">Sign up</a> | <a href="{% url django.contrib.auth.views.password_reset %}">
+			        Forgot your password?</a>
+			</p>
+		{% endblock %}
+		</div>
+	</div>
+	<div class="grid-box width25 grid-h" style="height:300px;width:320px">
+		<div class="module mod-box mod-box-header mod-box-header-color1 deepest" style="min-height: 174px; ">
+			<h3 class="module-title"><span class="icon icon-google"></span>Sign in with Google</h3>
+			<form action="/openid/login/" method="post">
+				{% csrf_token %}
+				{% if form.errors %}
+				<p>{{ form.non_field_errors }}</p>
+				{% endif %}
+				<input name="bsignin" type="image" style="border-width:0px" src="/mymedia/images/googlesignin_cut.png" />
+				<input type="hidden" id="id_openid_identifier" name="openid_identifier" maxlength="255" value="https://www.google.com/accounts/o8/id" />
+				{% if next %}
+				<input type="hidden" name="next" value="{{ next }}" />
+				{% endif %}
+			</form>
+		</div>
+	</div>
+	<div class="grid-box width25 grid-h" style="height:300px;width:340px">
+		<div class="module mod-box mod-box-header mod-box-header-color1 deepest" style="min-height: 174px; ">
+			<h3 class="module-title"><span class="icon icon-google"></span>Sign in with Facebook</h3>
+			<form action="/openid/login/" method="post">
+				{% csrf_token %}
+				{% if form.errors %}
+				<p>{{ form.non_field_errors }}</p>
+				{% endif %}
+				<input name="bsignin" type="image" style="border-width:0px" src="/mymedia/images/facebook-login-button.png" />
+				<input type="hidden" id="id_openid_identifier" name="openid_identifier" maxlength="255" value="https://www.google.com/accounts/o8/id" />
+				{% if next %}
+				<input type="hidden" name="next" value="{{ next }}" />
+				{% endif %}
+			</form>
+		</div>
+	</div>
+</div>		
+{% endblock %}

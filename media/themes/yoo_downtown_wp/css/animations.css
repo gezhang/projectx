@@ -1,0 +1,108 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+a:hover {
+	-webkit-transition: color 0.15s ease-in-out;
+	-moz-transition: color 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out;
+	-ms-transition: color 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out;
+}
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+/* Footer */
+#totop-scroller {
+	opacity: 1.0;
+	-webkit-transition: opacity 0.4s ease-out;
+	-moz-transition: opacity 0.4s ease-out;
+	-o-transition: opacity 0.4s ease-out;
+	-ms-transition: opacity 0.4s ease-out;
+	transition: opacity 0.4s ease-out;
+}
+
+#totop-scroller:hover { opacity: 0.5; }
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+/* Mega Drop-Down Menu */
+
+/* Level 1 */
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 {
+	-webkit-transition: 
+		border-top-color 0.2s ease-in-out,
+		color 0.4s ease-in-out,
+		background 0.3s ease-in-out;
+	-moz-transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.4s ease-in-out,
+		background 0.3s ease-in-out;
+	-o-transition:
+		color 0.4s ease-in-out,
+		background 0.3s ease-in-out;
+	-ms-transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.4s ease-in-out,
+		background 0.3s ease-in-out;
+	transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.4s ease-in-out,
+		background 0.3s ease-in-out;
+}
+
+/* Level 2 */
+.menu-dropdown a.level2,
+.menu-dropdown span.level2 {
+	-webkit-transition: 
+		border-top-color 0.2s ease-in-out,
+		color 0.3s ease-in-out,
+		background 0.3s ease-in-out;
+	-moz-transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.3s ease-in-out,
+		background 0.3s ease-in-out;
+	-o-transition:
+		color 0.3s ease-in-out,
+		background 0.3s ease-in-out;
+	-ms-transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.3s ease-in-out,
+		background 0.3s ease-in-out;
+	transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.3s ease-in-out,
+		background 0.3s ease-in-out;
+}
+
+/* Sidebar/Accordion Menu */
+
+/* Level 1 */
+.menu-sidebar a.level1,
+.menu-sidebar li > span.level1 {
+	-webkit-transition: 
+		border-top-color 0.2s ease-in-out,
+		color 0.2s ease-in-out,
+		background 0.3s ease-in-out;
+	-moz-transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.2s ease-in-out,
+		background 0.3s ease-in-out;
+	-o-transition:
+		color 0.2s ease-in-out,
+		background 0.3s ease-in-out;
+	-ms-transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.2s ease-in-out,
+		background 0.3s ease-in-out;
+	transition:
+		border-top-color 0.2s ease-in-out,
+		color 0.2s ease-in-out,
+		background 0.3s ease-in-out;
+}

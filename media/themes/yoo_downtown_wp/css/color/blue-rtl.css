@@ -1,0 +1,15 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Color RTL */
+
+.menu-dropdown a.level3 { background-image: url(../../images/color/blue/rtl/menu_dropdown_level3.png); }
+
+.menu-sidebar ul.level2 a,
+.menu-sidebar ul.level2 li > span { background-image: url(../../images/color/blue/rtl/menu_sidebar_level2.png); }
+
+.module .badge { background-image: url(../../images/color/blue/rtl/module_badges_color1.png); }
+.mod-box-color1 .badge { background-image: url(../../images/color/blue/rtl/module_badges_color2.png); }
+
+div.mod-box-header-color1 .module-title:before { background-image: url(../../images/color/blue/rtl/mod_box_header_color1.png); }
+
+div.mod-box-header-color2 .module-title:before { background-image: url(../../images/color/blue/rtl/mod_box_header_color2.png); }

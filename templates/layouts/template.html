@@ -1,0 +1,115 @@
+{% load mustache %}
+{% load straight_include %}
+
+<!DOCTYPE HTML>
+<html lang="{{ LANGUAGE_CODE }}" >
+<head>
+	<meta charset="UTF-8" />
+	<title>My Wish</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+    <link rel="stylesheet" href="/mymedia/css/fluid_grid.css">
+<!--     <link rel="stylesheet" href="/mymedia/css/gs960_grid.css"> -->
+    <link rel="stylesheet" href="/mymedia/css/style.css">
+    <link rel="stylesheet" href="/mymedia/css/mywish.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore-min.js"></script>
+    <script src="/mymedia/js/ICanHaz.min.js"></script>
+    <script src="/mymedia/js/backbone-min.js"></script>
+    <script src="/mymedia/js/backbone-tastypie.js"></script>
+    <script>
+         TWEET_API = "{% url api_dispatch_list api_name="v1" resource_name="wish" %}";
+      {% if data %}
+      app = {loaded: true};
+      {% endif %}
+    </script>
+    
+	<script src="/mymedia/js/app.js"></script>
+
+	<script type="text/html" id="topWishTemplate">
+		{% straight_include "topWishTemplate.mustache" %}
+	</script>
+		
+	<script type="text/html" id="tweetTemplate">
+		{% straight_include "tweetTemplate.mustache" %}
+	</script>
+	
+	<script type="text/html" id="listApp">
+		{% straight_include "listApp.mustache" %}
+	</script>
+	
+	<script type="text/html" id="detailApp">
+		{% straight_include "detailApp.mustache" %}
+	</script>
+    	
+	{% include "layouts/head-yootheme.html" %}
+</head>
+<body id="page" class="sidebar-a-right sidebar-b-right isblog wp-home wp-front_page" data-config='{"twitter":1,"plusone":0,"facebook":0}'>
+	{% include "layouts/absolute.html" %}
+	{% block test %}
+	{% endblock %}
+	
+	<div id="block-toolbar">
+		{%block block-toolbar %}
+		<div class="wrapper">
+			<div id="toolbar" class="grid-block">
+				{% include "layouts/toolbar-l.html" %}
+				{% include "layouts/toolbar-r.html" %}
+			</div>
+		</div>
+		{%endblock %}
+	</div>
+	<div id="block-main">
+		{%block block-main %}
+		<div class="wrapper">
+			<header id="header">
+				<div id="headerbar" class="grid-block">
+					<a id="logo" href="/">
+						<img src="/mymedia/images/logo.png" width="260" height="70" alt="logo" />
+					</a>
+				</div>
+			
+				<div id="menubar" class="grid-block">
+					{% include "layouts/menubar.html" %}
+				</div>
+				{% include "layouts/banner.html" %}
+			</header>
+
+			{% include "layouts/breadcrumbs.html" %}
+			
+			{%block block-main-body %}
+				{% include "layouts/top-a.html" %}
+				{% include "layouts/top-b.html" %}
+	
+				<div id="main" class="grid-block">
+					<div id="maininner" class="grid-box">
+					{%block maininner %}
+						{% include "layouts/innertop.html" %}
+						{% include "layouts/content.html" %}
+						{% include "layouts/innerbottom.html" %}
+					{%endblock %}
+					</div>
+					{% include "layouts/sidebar-a.html" %}
+					{% include "layouts/sidebar-b.html" %}
+				</div>
+			{%endblock %}
+		</div>
+		{%endblock %}
+	</div>
+	
+	<div id="block-bottom">
+		<div class="wrapper">
+			{% include "layouts/bottom-a.html" %}
+<!-- 			{% include "layouts/bottom-b.html" %} -->
+		</div>
+
+	</div>
+	
+	<div id="block-footer">
+		<div class="wrapper">
+			{% include "layouts/footer.html" %}
+		</div>
+	</div>
+</body>
+</html>

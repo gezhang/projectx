@@ -1,0 +1,541 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/tools.css);
+
+
+/* Buttons (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+a.button-more {
+	position: relative;
+	height: 29px;
+	margin-right: 23px;
+	padding: 0 0 0 13px;
+	background: url(../images/button_more.png) 0 0 repeat-x;
+	line-height: 28px;
+	color: #45484C;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none !important;
+}
+
+a.button-more:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -23px;
+	width: 23px;
+	height: 29px;
+	background: url(../images/button_more.png) 0 -30px no-repeat;
+}
+
+.mod-box-color1 a.button-more,
+.mod-box-color1 a.button-more:after,
+.mod-box-color2 a.button-more,
+.mod-box-color2 a.button-more:after,
+#block-bottom a.button-more,
+#block-bottom a.button-more:after { background-image: url(../images/button_more_color.png); }
+
+.mod-box-white a.button-more,
+.mod-box-white a.button-more:after { background-image: url(../images/button_more_white.png); }
+
+.mod-box-color1 a.button-more,
+.mod-box-color2 a.button-more { color: #fff; }
+
+.mod-box-color1 a.button-more:hover,
+.mod-box-color2 a.button-more:hover { color: #45484C; }
+
+#block-bottom a.button-more { color: #fff; }
+#block-bottom a.button-more:hover { color: #ccc; }
+
+
+/* Images and Objects (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+img.border-box { border: 1px solid #dddedb; }
+
+
+/* Lists and Tables (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+/* Line */
+ul.line > li { background: url(../images/list_line.png) 0 0 repeat-x; }
+
+#block-bottom ul.line > li { background-image: url(../images/list_line_bottom.png); }
+.mod-box-color1 ul.line > li,
+.mod-box-color2 ul.line > li { background-image: url(../images/list_line_color.png); }
+
+ul.line > li:first-child,
+#block-bottom ul.line > li:first-child {
+	padding-top: 5px;
+	background-image: none;
+}
+
+ul.line > li a { text-decoration: none; }
+
+/* Line Icon */
+ul.line-icon > li {
+	padding-left: 20px;
+	background:
+		url(../images/list_line.png) 0 0 repeat-x,
+		url(../images/list_line_icon.png) 0 0 no-repeat;
+}
+
+#block-bottom ul.line-icon > li {
+	background-image:
+		url(../images/list_line_bottom.png),
+		url(../images/list_line_icon.png);
+}
+
+.mod-box-color1 ul.line-icon > li,
+.mod-box-color2 ul.line-icon > li {
+	background-image:
+		url(../images/list_line_color.png),
+		url(../images/list_line_icon.png);
+}
+
+ul.line-icon > li:first-child,
+#block-bottom ul.line-icon > li:first-child {
+	background-image:
+		none,
+		url(../images/list_line_icon.png);
+}
+
+ul.line-icon li:hover,
+#block-bottom ul.line-icon li:hover {
+	background-position:
+		0 0,
+		0 -200px;
+}
+
+/* Check */
+ul.check > li {
+	padding: 4px 0 0 28px;
+	background: url(../images/tools/list_check.png) 0 0 no-repeat;
+}
+
+#block-bottom ul.check > li { background-image: url(../images/tools/list_check_bottom.png); }
+
+/* Zebra List and Table */
+ul.zebra > li,
+table.zebra tbody td { border-bottom: 1px solid #ccc; }
+ul.zebra > li:first-child,
+table.zebra tbody tr:first-child td { border-top: 1px solid #ccc; }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd { background: url(../images/list_zebra.png) 0 0 repeat; }
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) { background: url(../images/list_zebra.png) 0 0 repeat; }
+
+
+table.zebra caption { color: #444; }
+
+table.zebra thead {
+	background: #fff;
+	background: -moz-linear-gradient(
+					50% 0%,
+					#ffffff 0%,
+					#f7f7f7 100%
+				);
+				
+	background: -webkit-gradient( 
+					linear,
+					50% 0%,
+					50% 100%,
+					color-stop(0%, #ffffff),
+					color-stop(100%, #f7f7f7)
+				);
+}
+
+table.zebra tr { border-top: 1px solid #ccc; }
+
+table.zebra tfoot tr {
+	border-bottom: 1px solid #ccc;
+	background: rgba(0,0,0,0.02);
+	color: #999;
+}
+
+
+/* Definition Lists
+----------------------------------------------------------------------------------------------------*/
+
+dl.separator dt {	
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+/* border code because of RTL */
+dl.separator dd {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #dddedb;
+}
+
+dl.separator dt:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -15px;
+	width: 30px;
+	border-top: 1px solid #dddedb;
+}
+
+dl.separator dt:after {
+	content: "";
+	position:absolute;
+	top: -3px;
+	right: -3px;
+	width: 5px;
+	height: 5px;
+	background: #FFF;
+	border: 1px solid #dddedb;
+	border-radius:6px;
+}
+
+dl.separator dt:first-child:before,
+dl.separator dt:first-child:after { display: none; }
+
+
+/* Text
+----------------------------------------------------------------------------------------------------*/
+
+/* Inline Text Box */
+em.box { 
+	border: 1px dotted #dddedb;
+	background: #fff;
+	color: #45484C;
+}
+
+/* Dotted Horizontal Rule */
+hr.dotted { background: url(../images/tools/line_dotted.png) 0 0 repeat-x; }
+
+/* Selection */
+.mod-box-color1 ::-moz-selection,
+.mod-box-color2 ::-moz-selection,
+.mod-box-header .module-title ::-moz-selection,
+.mod-box-color1::-moz-selection,
+.mod-box-color2::-moz-selection,
+.mod-box-header .module-title::-moz-selection { background: rgba(0,0,0,0.3); color: #fff; }
+
+.mod-box-color1 ::selection,
+.mod-box-color2 ::selection,
+.mod-box-header .module-title ::selection,
+.mod-box-color1::selection,
+.mod-box-color2::selection,
+.mod-box-header .module-title::selection { background: rgba(0,0,0,0.3); color: #fff; }
+
+
+/* Boxes
+----------------------------------------------------------------------------------------------------*/
+
+.box-content {
+	background: #fff;
+	border: 1px solid #dddedb;
+}
+
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download {
+	background: #fff;
+	border-top: 1px solid #dddedb;
+	border-bottom: 1px solid #dddedb;
+}
+
+.box-info {
+	background: #ebf5fa url(../images/tools/box_info.png) 0 0 no-repeat;
+	border-color: #d2dce1;
+}
+
+.box-warning {
+	background: #fff0eb url(../images/tools/box_warning.png) 0 0 no-repeat;
+	border-color: #ffd7cd;
+}
+
+.box-hint {
+	background: #fffae6 url(../images/tools/box_hint.png) 0 0 no-repeat;
+	border-color: #fae6be;
+}
+
+.box-download {
+	background: #faffe6 url(../images/tools/box_download.png) 0 0 no-repeat;
+	border-color: #dce6be;
+}
+
+
+/* Forms (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+form.box fieldset,
+form.short fieldset { 
+	padding: 10px 15px;
+	border: 1px solid #dddedb;
+}
+
+form.box fieldset legend,
+form.short fieldset legend {
+	color: #aaa;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+form.box fieldset div,
+form.short fieldset div { margin-bottom: 10px; }
+
+form.box input[type="text"],
+form.short input[type="text"],
+form.box input[type="password"],
+form.short input[type="password"],
+form.box select,
+form.short select,
+form.box textarea,
+form.short textarea {
+	padding: 4px;
+	border: 1px solid #dddedb;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+	color: #999;
+}
+
+form.box input[type="text"]:focus,
+form.short input[type="text"]:focus,
+form.box input[type="password"]:focus,
+form.short input[type="password"]:focus,
+form.box select:focus,
+form.short select:focus,
+form.box textarea:focus,
+form.short textarea:focus {
+	outline: none;
+	color: #45484C;
+	border: 1px solid #cacbc8;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+form.box textarea { padding: 6px; }
+
+form.box button,
+form.short button,
+form.box input[type="button"],
+form.box input.button {
+	margin: 3px;
+	padding: 5px 12px;
+	border: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+form.box button:hover,
+form.short button:hover,
+form.box input[type="button"]:hover,
+form.box input.button:hover { text-shadow: 0 1px 0 rgba(0,0,0,0.1); }
+
+form.box button:active,
+form.short button:active,
+form.box input[type="button"]:active,
+form.box input.button:active {
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+.mod-box-color1 form.box input[type="text"],
+.mod-box-color1 form.short input[type="text"],
+.mod-box-color1 form.box input[type="password"],
+.mod-box-color1 form.short input[type="password"],
+.mod-box-color1 form.box select,
+.mod-box-color1 form.short select,
+.mod-box-color1 form.box textarea,
+.mod-box-color1 form.short textarea,
+.mod-box-color2 form.box input[type="text"],
+.mod-box-color2 form.short input[type="text"],
+.mod-box-color2 form.box input[type="password"],
+.mod-box-color2 form.short input[type="password"],
+.mod-box-color2 form.box select,
+.mod-box-color2 form.short select,
+.mod-box-color2 form.box textarea,
+.mod-box-color2 form.short textarea,
+.mod-box-color1 form.box button,
+.mod-box-color1 form.short button,
+.mod-box-color1 form.box input[type="button"],
+.mod-box-color1 form.box input.button,
+.mod-box-color2 form.box button,
+.mod-box-color2 form.short button,
+.mod-box-color2 form.box input[type="button"],
+.mod-box-color2 form.box input.button {
+	border: none;
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.mod-box-color1 form.box input[type="text"]:focus,
+.mod-box-color1 form.short input[type="text"]:focus,
+.mod-box-color1 form.box input[type="password"]:focus,
+.mod-box-color1 form.short input[type="password"]:focus,
+.mod-box-color1 form.box select:focus,
+.mod-box-color1 form.box select:focus,
+.mod-box-color1 form.box textarea:focus,
+.mod-box-color1 form.box textarea:focus,
+.mod-box-color2 form.box input[type="text"]:focus,
+.mod-box-color2 form.short input[type="text"]:focus,
+.mod-box-color2 form.box input[type="password"]:focus,
+.mod-box-color2 form.short input[type="password"]:focus,
+.mod-box-color2 form.box select:focus,
+.mod-box-color2 form.short select:focus,
+.mod-box-color2 form.box textarea:focus,
+.mod-box-color2 form.short textarea:focus,
+.mod-box-color1 form.box button:hover,
+.mod-box-color1 form.short button:hover,
+.mod-box-color1 form.box input[type="button"]:hover,
+.mod-box-color1 form.box input.button:hover,
+.mod-box-color2 form.box button:hover,
+.mod-box-color2 form.short button:hover,
+.mod-box-color2 form.box input[type="button"]:hover,
+.mod-box-color2 form.box input.button:hover {
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+.mod-box-color1 form.box button,
+.mod-box-color1 form.short button,
+.mod-box-color1 form.box input[type="button"],
+.mod-box-color1 form.box input.button,
+.mod-box-color2 form.box button,
+.mod-box-color2 form.short button,
+.mod-box-color2 form.box input[type="button"],
+.mod-box-color2 form.box input.button {
+	background-color: #fff;
+	color: #45484C;
+}
+
+.mod-box-color1 form.box button:hover,
+.mod-box-color1 form.short button:hover,
+.mod-box-color1 form.box input[type="button"]:hover,
+.mod-box-color1 form.box input.button:hover,
+.mod-box-color2 form.box button:hover,
+.mod-box-color2 form.short button:hover,
+.mod-box-color2 form.box input[type="button"]:hover,
+.mod-box-color2 form.box input.button:hover {
+	background-color: #45484C;
+	color: #fff;
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.8);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.8);
+}
+
+
+/* Mobile Switcher (Needed for Mobile)
+----------------------------------------------------------------------------------------------------*/
+
+.mobile-switcher {
+	background: #fff;
+	background: rgba(255,255,255,0.2);
+	border: 1px solid #dddedb;
+	border: 1px solid rgba(255,255,255,0.3);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+/* Mini Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+.social-mini {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+#toolbar .social-mini { margin-top: 4px; }
+
+.social-mini li {
+	float: left;
+	margin-right: 2px;
+	line-height: 16px;
+}
+
+.social-mini li a {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	float: left;
+	overflow: hidden;
+	background: url(../images/icons_social_mini.png) 0 0 no-repeat;
+	text-indent: 50px;
+}
+
+.social-mini .rss a { background-position: 0 0; }
+.social-mini .rss a:hover { background-position: 0 -30px; }
+
+.social-mini .twitter a { background-position: 0 -60px; }
+.social-mini .twitter a:hover { background-position: 0 -90px; }
+
+.social-mini .facebook a { background-position: 0 -120px; }
+.social-mini .facebook a:hover { background-position: 0 -150px; }
+
+.social-mini .flickr a { background-position: 0 -180px; }
+.social-mini .flickr a:hover { background-position: 0 -210px; }
+
+.social-mini .linkedin a { background-position: 0 -240px; }
+.social-mini .linkedin a:hover { background-position: 0 -270px; }
+
+.social-mini .myspace a { background-position: 0 -300px; }
+.social-mini .myspace a:hover { background-position: 0 -330px; }
+
+.social-mini .lastfm a { background-position: 0 -360px; }
+.social-mini .lastfm a:hover { background-position: 0 -390px; }
+
+.social-mini .dribbble a { background-position: 0 -420px; }
+.social-mini .dribbble a:hover { background-position: 0 -450px; }
+
+.social-mini .digg a { background-position: 0 -480px; }
+.social-mini .digg a:hover { background-position: 0 -510px; }
+
+.social-mini .delicious a { background-position: 0 -540px; }
+.social-mini .delicious a:hover { background-position: 0 -570px; }
+
+.social-mini .deviantart a { background-position: 0 -600px; }
+.social-mini .deviantart a:hover { background-position: 0 -630px; }
+
+.social-mini .technorati a { background-position: 0 -660px; }
+.social-mini .technorati a:hover { background-position: 0 -690px; }
+
+.social-mini .stumbleupon a { background-position: 0 -720px; }
+.social-mini .stumbleupon a:hover { background-position: 0 -750px; }
+
+.social-mini .yahoo a { background-position: 0 -780px; }
+.social-mini .yahoo a:hover { background-position: 0 -810px; }
+
+.social-mini .openid a { background-position: 0 -840px; }
+.social-mini .openid a:hover { background-position: 0 -870px; }
+
+.social-mini .xing a { background-position: 0 -900px; }
+.social-mini .xing a:hover { background-position: 0 -930px; }
+
+.social-mini .forrst a { background-position: 0 -960px; }
+.social-mini .forrst a:hover { background-position: 0 -990px; }
+

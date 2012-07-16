@@ -1,0 +1,97 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* WidgetKit
+----------------------------------------------------------------------------------------------------*/
+
+/* Slideshow */
+.wk-slideshow-downtown a.button-more,
+.wk-slideshow-downtown a.button-more:after { background-image: url(../images/button_more_white.png); }
+
+/* Twitter */
+.wk-twitter .image {
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+#block-bottom .wk-twitter .image {
+	border-color: #676A6D;
+	background-color: #505254;
+}
+
+.wk-twitter-list article { border-top: 1px solid #ddd; }
+
+#block-bottom .wk-twitter-list article {
+	border: none;
+	background: url(../images/list_line_bottom.png) 0 0 repeat-x;
+}
+
+#block-bottom .wk-twitter-list article:first-child {
+	border: none;
+	background: none;
+}
+
+
+.wk-twitter-bubbles .content {
+	border: 1px solid #d8d8d8;
+	background: #FFF;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+#block-bottom .wk-twitter-bubbles .content {
+	border-color: #676A6D;
+	background: #505254;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.wk-twitter-bubbles .content:after {
+	width: 18px;
+	background: url(../images/widgetkit/arrow.png) 0 0 no-repeat;
+}
+
+#block-bottom .wk-twitter-bubbles .content:after { background-image: url(../images/widgetkit/arrow_bottom.png); }
+
+.wk-twitter-single.image { background: url(../images/widgetkit/bird.png) 0 3px no-repeat; }
+
+#block-bottom .wk-twitter-single.image { background-image: url(../images/widgetkit/bird_bottom.png); }
+
+/* Spotlight */
+.spotlight .overlay-default {
+	background: rgba(0,0,0,0.2) url(../images/widgetkit/magnifier.png) 50% 50% no-repeat;
+	-webkit-box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+}
+
+
+/* ZOO
+----------------------------------------------------------------------------------------------------*/
+
+/* ZOO List */
+#page ul.zoo-list > li {
+	border: none;
+	background: url(../images/list_line.png) 0 0 repeat-x;
+}
+#page #block-bottom ul.zoo-list > li { background-image: url(../images/list_line_bottom.png); }
+#page .mod-box-color1 ul.zoo-list > li,
+#page .mod-box-color2 ul.zoo-list > li { background-image: url(../images/list_line_color.png); }
+#page ul.zoo-list > li:first-child,
+#page #block-bottom ul.zoo-list > li:first-child {
+	padding-top: 5px;
+	background-image: none;
+}
+
+/* ZOO Comments List */
+#page .zoo-comments-list > article {
+	border: none;
+	background: url(../images/list_line.png) 0 0 repeat-x;
+}
+#page .zoo-comments-list > article:first-child {
+	padding-top: 5px;
+	background-image: none;
+}
+#page .zoo-comments-list .meta { color: #999; }
+	

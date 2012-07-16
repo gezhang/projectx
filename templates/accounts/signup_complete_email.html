@@ -1,0 +1,9 @@
+{% load i18n %}{% autoescape off %}
+<p>{% trans "Thank you for registering in {{ site_name }}!" %}</p>
+<p>{% trans "Your account was set up on our website with the following: " %}</p>
+<p>{% trans "Username:" %} {% blocktrans %}{{ username }}{% endblocktrans %}</p> 
+<p>{% trans "Click <a href=\"https://www.localsnake.com/accounts/login\">here</a> to log in." %}<p>
+<p>{% trans "Forgot password? click <a href=\"https://www.localsnake.com/accounts/password_reset\">here</a> to reset your password." %}</p>
+<br> 
+<p>{% blocktrans %}The {{ site_name }} team{% endblocktrans %}</p>
+{% endautoescape %}

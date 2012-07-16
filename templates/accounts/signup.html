@@ -1,0 +1,68 @@
+{% extends "base_simple.html" %}
+
+{% block block-main-body %}
+<div class="grid-block">
+	<div class="grid-box width25 grid-h" style="width:320px">
+		<div class="module mod-box mod-box-header mod-box-header-color1 deepest" style="min-height: 174px; ">
+			<h3 class="module-title"><span class="icon icon-twitter"></span>User signup</h3>
+			<div>
+				<form class="box" action="" method="post">
+			    {% if form.errors %}
+			   		<p style="color:red">Please correct the error{{form.errors|pluralize }} below.</p>
+			    {% endif %}
+					<p style="padding-bottom: 0px">
+					{{ form.email1.label_tag }}<br>{{ form.email1 }} {{form.email1.errors}}
+					</p>
+					<p style="padding-bottom: 0px">
+					{{ form.password1.label_tag }}<br>{{ form.password1 }} {{form.password1.errors}}
+					</p>
+					<p class="submit">
+					<input type="submit" value="Sign up" class="button" />
+					</p>
+					<p>
+					By clicking this button, I agree MyWish <a href="http://www.localsnake.com/terms-of-use" target="_blank">term of use</a> 
+					and <a href="http://www.localsnake.com/privacy" target="_blank">privacy</a>.
+				    </p>
+				</form>
+				{% block form_footer %}
+					<p id="nav">
+					    <a href="/accounts/login">Login</a>
+					</p>
+				{% endblock %}
+			</div>	
+		</div>
+	</div>
+	<div class="grid-box width25 grid-h" style="height:300px;width:320px">
+		<div class="module mod-box mod-box-header mod-box-header-color1 deepest" style="min-height: 174px; ">
+			<h3 class="module-title"><span class="icon icon-google"></span>Sign in with Google</h3>
+			<form action="/openid/login/" class="simpleform" method="post">
+				{% csrf_token %}
+				{% if form.errors %}
+				<p>{{ form.non_field_errors }}</p>
+				{% endif %}
+				<input name="bsignin" type="image" style="border-width:0px" src="/mymedia/images/googlesignin_cut.png" />
+				<input type="hidden" id="id_openid_identifier" name="openid_identifier" maxlength="255" value="https://www.google.com/accounts/o8/id" />
+				{% if next %}
+				<input type="hidden" name="next" value="{{ next }}" />
+				{% endif %}
+			</form>
+		</div>
+	</div>
+	<div class="grid-box width25 grid-h" style="height:300px;width:340px">
+		<div class="module mod-box mod-box-header mod-box-header-color1 deepest" style="min-height: 174px; ">
+			<h3 class="module-title"><span class="icon icon-google"></span>Sign in with Facebook</h3>
+			<form action="/openid/login/" method="post">
+				{% csrf_token %}
+				{% if form.errors %}
+				<p>{{ form.non_field_errors }}</p>
+				{% endif %}
+				<input name="bsignin" type="image" style="border-width:0px" src="/mymedia/images/facebook-login-button.png" />
+				<input type="hidden" id="id_openid_identifier" name="openid_identifier" maxlength="255" value="https://www.google.com/accounts/o8/id" />
+				{% if next %}
+				<input type="hidden" name="next" value="{{ next }}" />
+				{% endif %}
+			</form>
+		</div>
+	</div>	
+</div>		
+{% endblock %}

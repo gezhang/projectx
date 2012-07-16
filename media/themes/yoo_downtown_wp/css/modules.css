@@ -1,0 +1,167 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/modules.css);
+
+
+/* Module Badges
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge {
+	top: -3px;
+	right: -4px;
+	z-index: 3;
+	width: 50px;
+	height: 50px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+ 
+.module .badge-hot { background-position: 0 0; }
+.module .badge-top { background-position: 0 -50px; }
+.module .badge-free { background-position: 0 -100px; }
+.module .badge-new { background-position: 0 -150px; }
+
+
+/* Module Icons
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .icon { background: url(../images/module_icons.png) 0 0 no-repeat; }
+
+.module .module-title .icon-download { background-position: 0 0; }
+.module .module-title .icon-twitter { background-position: 0 -30px; }
+.module .module-title .icon-mail { background-position: 0 -60px; }
+.module .module-title .icon-bubble { background-position: 0 -90px; }
+.module .module-title .icon-login { background-position: 0 -120px; }
+.module .module-title .icon-cart { background-position: 0 -150px; }
+
+
+/* Module Type: Box
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box {
+	padding: 15px;
+	background: url(../images/mod_box.png) 0 0 repeat;
+}
+
+.mod-box.deepest > div > *:first-child { margin-top: 0; }
+.mod-box.deepest > div > *:last-child { margin-bottom: 0; }
+
+/* White */
+.mod-box-white { background: #fff; }
+
+/* Colors */
+.mod-box-color1,
+.mod-box-color2 {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.mod-box-color1 h3,
+.mod-box-color2 h3,
+.mod-box-color1 strong,
+.mod-box-color2 strong { color: #fff; }
+
+.mod-box-color1 a,
+.mod-box-color2 a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.mod-box-color1 a:hover,
+.mod-box-color2 a:hover,
+.mod-box-color1 em,
+.mod-box-color2 em,
+.mod-box-color1 code,
+.mod-box-color2 code { color: #45484C; }
+
+/* Bottom Position */
+#block-bottom .mod-box { background: url(../images/mod_box_bottom.png) 0 0 repeat; }
+
+/* Header */
+.mod-box-header .module-title + div,
+.mod-box-header .module-title + ul { clear: both; }
+
+.mod-box-header .module-title {
+	position: relative;
+	margin: 0 0 14px -25px;
+	padding: 4px 15px 4px 10px;
+	background-color: #45484C;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	line-height: 30px;
+	float: left;
+}
+
+.mod-box-header .module-title:before {
+	content: " ";
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	display: block;
+	width: 10px;
+	height: 7px;
+	background: url(../images/mod_box_header.png) 0 0 no-repeat;
+}
+
+/* Header Black */
+#block-bottom .mod-box-header-black .module-title { background-color: #323437; }
+
+/* Subtitles */
+.mod-box .module-title span.subtitle {
+	margin-bottom: 4px;
+	color: #999;
+    line-height: 12px;
+	font-weight: bold;
+}
+
+.mod-box-header .module-title span.subtitle { margin-top: -4px; }
+
+.mod-box-color1 .module-title span.subtitle,
+.mod-box-color2 .module-title span.subtitle,
+.mod-box-header-color1 .module-title span.subtitle,
+.mod-box-header-color2 .module-title span.subtitle { color: #f8f8f8; }
+
+/* Icons */
+.mod-box-header .module-title .icon { top: 0; }
+.mod-box-header .module-title .icon + span.title { display: inline-block; }
+.mod-box-header .module-title .icon + span.title + span.subtitle { margin-left: 35px; }
+
+
+/* Module Type: Line
+----------------------------------------------------------------------------------------------------*/
+
+/* Vertical (Stack) */
+.grid-v .mod-line {
+	padding: 25px 0 0 0;
+	background: url(../images/mod_line_vertical.png) 0 0 repeat-x;
+}
+
+#block-bottom .grid-v .mod-line { background-image: url(../images/mod_line_bottom_vertical.png); }
+
+#page .grid-v:first-child .mod-line {
+	padding-top: 0;
+	background: none;
+}
+
+/* Horizontal (Equal/Double) */
+div.grid-h .mod-line {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0 20px 0 20px;
+	background: url(../images/mod_line.png) 0 0 repeat-y;
+}
+
+#block-bottom div.grid-h .mod-line { background-image: url(../images/mod_line_bottom.png); }
+
+#page .grid-h:first-child .mod-line { background: none; }
+
+/* Headers */
+.mod-line .module-title {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+#block-main .mod-line .module-title {
+	color: #45484C;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.1);
+}

@@ -1,0 +1,29 @@
+{% extends "base_simple.html" %}
+
+{% block form_content %}
+    <h3>Log in as</h3>
+    {% if form.errors %}
+    	<br>
+   		<p>{{ form.non_field_errors }}</p>
+    {% endif %}
+       <table id="LoginAsUser" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+            <p style="padding-bottom: 20px">
+				{{ form.user.label_tag }}<br>{{ form.user }} {{form.user.errors}}
+            </p>
+            <p class="submit">
+                <input type="submit" value="Log in as" class="button" />
+	        	<input type="hidden" name="next" value="{{ next }}" />
+	        </p>
+        </td>
+	</tr>
+	</table>
+{% endblock %}
+
+{% block form_footer %}
+	<p id="nav">
+	    <a href="/accounts/signup">Sign up</a> | <a href="{% url django.contrib.auth.views.password_reset %}">
+	        Forgot your password?</a>
+	</p>
+{% endblock %}	

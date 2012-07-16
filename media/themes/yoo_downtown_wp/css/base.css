@@ -1,0 +1,46 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/base.css);
+
+
+/* New style-related Base Values
+----------------------------------------------------------------------------------------------------*/
+
+body { font: normal 13px/20px Arial, Helvetica, sans-serif; }
+
+h1 { font-size: 32px; line-height: 32px; color: #45484C; }
+h2 { font-size: 26px; line-height: 26px; }
+h3 { font-size: 20px; line-height: 20px; }
+h4 { font-size: 18px; line-height: 18px; color: #565754; }
+h5 { font-size: 18px; line-height: 18px; color: #565754; }
+h6 { font-size: 17px; line-height: 16px; color: #686a6c; }
+
+h1, h2, h3 { text-transform: uppercase; }
+h2, h3, h4, h5, h6 { font-weight: bold; }
+
+strong { color: #323338; }
+
+ins, mark { background-color: #ffa; }
+mark { color: #3d4144; }
+
+hr { border-top-color: #DFDFDE; }
+
+pre {
+	border: 1px solid #DFDFDE;
+	background: #fff;
+}
+
+/* Useful Snippets
+----------------------------------------------------------------------------------------------------*/
+
+a:not([class]):active,
+a:not([class]):focus {
+	position: relative;
+	top: 1px;
+}
+
+a:not([class]):active > *,
+a:not([class]):focus > * {
+	position: relative;
+	top: -1px;
+}

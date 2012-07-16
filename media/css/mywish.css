@@ -1,0 +1,31 @@
+form.box ul.errorlist {
+	color: red;
+	margin: 0 0 0 0;
+}
+
+/* signup page */
+form.box input#id_email1, 
+form.box input#id_password1
+{
+	width: 200px;
+}
+
+/* login page */
+form.box input#id_username, 
+form.box input#id_password
+{
+	width: 200px;
+}
+
+/* password reset page */
+form.box input#id_email
+{
+	width: 200px;
+}
+
+/* password reset confirmation page */
+form.box input#id_new_password1,
+form.box input#id_new_password2
+{
+	width: 120px;
+}

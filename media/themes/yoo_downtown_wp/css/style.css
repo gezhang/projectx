@@ -1,0 +1,102 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+body { color: #45484C; }
+
+a { color: #98999a; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+body#page { background: #313337; }
+
+/* Blocks */
+#block-toolbar { background: #45484C; }
+
+#block-main {
+	border-bottom: 10px solid #F2F2F0;
+	background-color: #eaeae6;
+}
+
+#block-bottom {
+	background-color: #383C3F;
+	color: #b6babd;
+}
+
+/* Toolbar */
+#toolbar { color: #777; }
+
+/* Footer */
+#footer {
+	color: #59595B;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Box Styling */
+#menubar,
+#content, 
+.mod-box {
+	-moz-box-shadow:
+		inset 0 1px 0 rgba(255,255,255,1.0),
+		0 1px 2px rgba(0,0,0,0.12);
+	-webkit-box-shadow:
+		inset 0 1px 0 rgba(255,255,255,1.0),
+		0 1px 2px rgba(0,0,0,0.12);
+	box-shadow:
+		inset 0 1px 0 rgba(255,255,255,1.0),
+		0 1px 2px rgba(0,0,0,0.12);
+}
+
+#block-bottom .mod-box {
+	-moz-box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.15);
+	-webkit-box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.15);
+	box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.15);
+}
+
+.mod-box-color1,
+.mod-box-color2 {
+	-moz-box-shadow:
+		inset 0 0 0 1px rgba(0,0,0,0.15),
+		inset 0 0 30px rgba(0,0,0,0.1),
+		0 1px 1px rgba(0,0,0,0.12);
+	-webkit-box-shadow:
+		inset 0 0 0 1px rgba(0,0,0,0.15),
+		inset 0 0 30px rgba(0,0,0,0.1),
+		0 1px 1px rgba(0,0,0,0.12);
+	box-shadow:
+		inset 0 0 0 1px rgba(0,0,0,0.15),
+		inset 0 0 30px rgba(0,0,0,0.1),
+		0 1px 1px rgba(0,0,0,0.12);
+}
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+

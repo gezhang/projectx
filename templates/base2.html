@@ -1,0 +1,11 @@
+{% extends "layouts/template.html" %}
+{% load mustache %}
+{% load straight_include %}
+
+{% block block-main-body %}
+<div id="app">
+	{% if data %}
+	{% mustache "detailApp" data %}
+	{% endif %}
+</div>
+{% endblock %}

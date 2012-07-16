@@ -1,0 +1,82 @@
+/* html { */
+/*   background-color: #eee; */
+/*   font-family: "Helvetica Neue", Arial, sans-serif; */
+/* } */
+
+/* body { */
+/*   margin: auto; */
+/*   color: #777; */
+/* } */
+
+#input {
+  padding: 1em 1em;
+}
+
+#input #description {
+  margin-top: .5em;
+  width: 100%;
+  display: block;
+  border: #ccc 1px solid;
+font-family: Lucida Grande,Verdana,Arial,Bitstream Vera Sans,sans-serif;
+font-size: 24px;
+}
+
+#input #link {
+  margin-top: .5em;
+  width: 100%;
+  display: block;
+  border: #ccc 1px solid;
+font-family: Lucida Grande,Verdana,Arial,Bitstream Vera Sans,sans-serif;
+font-size: 24px;
+}
+
+#input .wish {
+  display: block;
+  font-size: 1.25em;
+  color: #333;
+  background-color: #eee;
+  padding: .25em;
+  margin: .25em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em 1.33em;
+}
+
+#wishes {
+/*   margin: 0 2em; */
+/*   border-top: 1px solid #ccc; */
+}
+
+.wish {
+/*   font-size: 1.25em; */
+/*   color: #333; */
+/*   border: 1px solid #ccc; */
+/*   border-top: 1px solid #fff; */
+/*   padding: .5em; */
+}
+
+.username {
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: .75em;
+}
+
+.icon {
+	height: 80px;
+	width: 80px;
+	float: left;
+	margin-right:10px;
+}
+
+.likeit {
+	float: right;
+	display: block;
+	font-size: 1.25em;
+	color: #333;
+	background-color: #eee;
+}
